@@ -11,7 +11,7 @@ function App() {
   useEffect(()=>{
  const fetchPost = async () =>{
    setLoading(true)
-   const res = await axios.get('http://api.enye.tech/v1/challenge/records')
+   const res = await axios.get('https://api.enye.tech/v1/challenge/records')
    setPosts(res.data.records.profiles)
  }
  fetchPost()
